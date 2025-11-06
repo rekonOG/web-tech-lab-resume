@@ -1,0 +1,53 @@
+:root{
+  --bg:#f7f8fb;
+  --card:#ffffff;
+  --accent:#0b3d91;
+  --muted:#556070;
+  --radius:10px;
+  --shadow:0 8px 24px rgba(15,23,42,0.06);
+  --maxw:980px;
+}
+*{box-sizing:border-box}
+body{
+  font-family:Inter,Segoe UI,Roboto,Helvetica,Arial;
+  margin:0;
+  background:burlywood;
+  color:#0e1724;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+.container{max-width:var(--maxw);margin:28px auto;padding:0 18px}
+.site-header{background:salmon;border-bottom:1px solid rgba(14,23,36,0.06)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 18px}
+.brand{font-weight:700;color:var(--accent);text-decoration:none;font-size:1.05rem}
+.nav a{margin-left:16px;color:var(--muted);text-decoration:none}
+.nav a.active{color:var(--accent);font-weight:600}
+.card{background:antiquewhite;padding:20px;border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:18px}
+.hero{display:flex;gap:20px}
+.hero-left{flex:1}
+.hero-right{width:220px;text-align:center}
+.profile-pic{width:160px;height:160px;border-radius:8px;object-fit:cover}
+.lead{color:var(--muted);font-size:1.02rem}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.btn-ghost{background:transparent;border:1px solid var(--accent);color:var(--accent);margin-left:8px}
+.projects ul{margin:0;padding-left:1rem}
+.muted-links{color:var(--muted);font-size:0.95rem;margin-top:8px}
+.certifications .cert-placeholder{color:var(--muted);padding:8px 0}
+.biodata-table{width:100%;border-collapse:collapse}
+.biodata-table th{width:30%;text-align:left;padding:12px;color:var(--muted);vertical-align:top}
+.biodata-table td{padding:12px}
+.resume-layout .two-col{display:flex;gap:18px}
+.col{flex:1}
+.left-col{max-width:420px}
+.right-col{flex:1;background:#fafafa;padding:14px;border-radius:8px;border:1px solid rgba(13,30,60,0.03)}
+.print-button{margin-top:16px}
+.site-footer{padding:18px 0;color:var(--muted);text-align:center}
+@media (max-width:880px){
+  .resume-layout .two-col{flex-direction:column}
+  .hero-right{display:none}
+}
+@media print{
+  .site-header,.site-footer,.nav,.btn{display:none}
+  .card{box-shadow:none}
+  body{background:#fff}
+}
