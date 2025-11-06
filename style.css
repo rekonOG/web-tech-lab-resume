@@ -1,0 +1,12 @@
+:root{--bg:#f7f8fb;--card:#fff;--accent:#0b3d91;--muted:#556070;--radius:10px;--shadow:0 8px 24px rgba(15,23,42,0.06)}
+body{font-family:Inter,Segoe UI,Roboto,Helvetica,Arial;margin:0;background:var(--bg);color:#0e1724}
+.container{max-width:980px;margin:28px auto;padding:0 18px}
+.site-header{background:#fff;border-bottom:1px solid rgba(14,23,36,0.06)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 18px}
+.brand{font-weight:700;color:var(--accent);text-decoration:none}
+.nav a{margin-left:16px;color:var(--muted);text-decoration:none}
+.nav a.active{color:var(--accent);font-weight:600}
+.card{background:var(--card);padding:20px;border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:18px}
+.btn{padding:10px 14px;border-radius:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.btn-ghost{background:transparent;border:1px solid var(--accent);color:var(--accent);margin-left:8px}
+.site-footer{padding:18px 0;color:var(--muted);text-align:center}
