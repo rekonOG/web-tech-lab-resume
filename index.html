@@ -1,16 +1,17 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>K. Datta Sai Reddy — Portfolio</title>
-  <link rel="stylesheet" href="assets/style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Datta's Portfolio | Engineer • Coder • Developer</title>
+  <meta name="description" content="Datta — student / developer exploring AI, web dev and games.">
+  <link rel="stylesheet" href="assets/style.css" />
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="index.html">K. Datta Sai Reddy</a>
+      <a class="brand" href="index.html">Datta</a>
       <nav class="nav">
         <a href="index.html" class="active">Home</a>
         <a href="resume.html">Resume</a>
@@ -18,16 +19,69 @@
       </nav>
     </div>
   </header>
+
   <main class="container">
     <section class="card hero">
-      <h1>Hello — I'm K. Datta Sai Reddy</h1>
-      <p class="lead">Computer Science Engineering student at RV Institute of Technology and Management, Bengaluru. Passionate about AI, software development, and building clean web interfaces.</p>
-      <p><a class="btn" href="resume.html">View Resume</a> <a class="btn btn-ghost" href="biodata.html">View Bio-data</a></p>
+      <div class="hero-left">
+        <h1>Hi — I'm <span class="name">Datta</span></h1>
+        <p class="lead">19-year-old who loves coding and learning about AI. Exploring web development, ML experiments and game prototypes.</p>
+
+        <p class="meta"><strong>Location:</strong> India &nbsp;•&nbsp; <strong>Role:</strong> Student / Developer</p>
+
+        <p class="actions">
+          <a class="btn" href="resume.html">View Resume</a>
+          <a class="btn btn-ghost" href="#projects">Projects</a>
+        </p>
+
+        <div class="contact">
+          <p><strong>Email:</strong> <a href="mailto:zygrade63@gmail.com">zygrade63@gmail.com</a></p>
+          <p><strong>GitHub:</strong> <a href="https://github.com/rekonOG" target="_blank" rel="noopener">rekonOG</a></p>
+          <p><strong>LeetCode:</strong> <a href="https://leetcode.com/u/datta_1905/" target="_blank" rel="noopener">datta_1905</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/k-datta-sai/" target="_blank" rel="noopener">k-datta-sai</a></p>
+        </div>
+      </div>
+
+      <aside class="hero-right card">
+        <img src="portfolio_pic.jpg" alt="Profile" class="profile-pic" />
+        <div class="view-count">Local views: <span id="view-count">0</span></div>
+      </aside>
+    </section>
+
+    <section id="projects" class="card projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>🐍 ML Tool (Python)</strong> — A small ML utility for data analysis & predictions.
+          — <a href="https://github.com/rxxkie-git/biomltool.git" target="_blank" rel="noopener">GitHub</a>
+        </li>
+        <li>
+          <strong>🎵 Music Recommender (C++)</strong> — Recommender engine that chooses songs by mood/popularity.
+          — <a href="https://github.com/rxxkie-git/musicrecomendation.git" target="_blank" rel="noopener">GitHub</a>
+        </li>
+        <li>
+          <strong>🌀 Black Hole Game</strong> — A basic, fun 2–3 player browser game.
+          — <a href="index1.html" target="_blank" rel="noopener">Play Demo</a>
+        </li>
+        <li>
+          <strong>🚀 New Project</strong> — In development. Stay tuned!
+        </li>
+      </ul>
+      <p class="muted-links">Other links: <a href="https://open.spotify.com/user/31fpqvd52kws3agv2yxqamm2ah4a" target="_blank" rel="noopener">Spotify</a> •
+      <a href="https://youtu.be/xvFZjo5PgG0?si=guSX8_FDqIAEkl22" target="_blank" rel="noopener">YouTube</a></p>
+    </section>
+
+    <section id="certifications" class="card certifications">
+      <h2>Certifications</h2>
+      <!-- Empty on purpose — you can add items here later -->
+      <div class="cert-placeholder"><em>Empty — add certifications here later.</em></div>
     </section>
   </main>
+
   <footer class="site-footer">
-    <div class="container">© <span id="year"></span> K. Datta Sai Reddy</div>
+    <div class="container">© <span id="year"></span> Datta</div>
   </footer>
-  <script src="script.js"></script>
+
+  <script src="assets/script.js"></script>
 </body>
 </html>
+
